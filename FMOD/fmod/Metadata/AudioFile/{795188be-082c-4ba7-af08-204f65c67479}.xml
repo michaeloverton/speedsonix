@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{795188be-082c-4ba7-af08-204f65c67479}">
+		<property name="assetPath">
+			<value>temp music 2/main-arps-test.aif</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>60</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{630ffc18-945c-47f5-9fbc-c30d27b77fa3}</destination>
+		</relationship>
+	</object>
+</objects>
