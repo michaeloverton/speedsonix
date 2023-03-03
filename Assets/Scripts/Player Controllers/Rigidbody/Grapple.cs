@@ -4,24 +4,34 @@ using UnityEngine;
 
 public class Grapple : MonoBehaviour
 {
+    [Header("General")]
     GameObject playerContainer;
     [SerializeField] LayerMask playerLayer;
-    [SerializeField] RigidLook rl;
+    [SerializeField] RigidLook rigidLook;
     [SerializeField] Transform cam;
-    [SerializeField] float grappleLength = 100f;
-    bool cooldown;
 
+    [Header("Properties")]
+    [SerializeField] float springForce = 4f;
+    [SerializeField] float grappleLength = 100f;
+    [SerializeField] float retractionRate = 60f;
+    SpringJoint springJoint;
+
+    [Header("Crosshair")]
+    [SerializeField] GameObject grappleCrosshair;
+    [SerializeField] float crosshairScaleFactor;
+    [SerializeField] bool showSurfaceCrosshair;
+    Vector3 baseCrosshairScale;
+    [SerializeField] RectTransform hudCrosshair;
+    [SerializeField] float hudCrosshairMaxScale = 1.25f;
+    bool hudCrosshairIsMax = false;
+    Vector3 baseHudCrosshairScale;
+    
+    bool cooldown;
     LineRenderer lineRenderer;
     Vector3 connectionPoint;
     Vector3 localConnectionPoint;
     Transform connectedObjectTransform;
     bool connected = false;
-    SpringJoint springJoint;
-    [SerializeField] float retractionRate = 60f;
-
-    [SerializeField] GameObject grappleCrosshair;
-    [SerializeField] float crosshairScaleFactor;
-    Vector3 baseCrosshairScale;
 
     void Start()
     {
@@ -29,33 +39,49 @@ public class Grapple : MonoBehaviour
         lineRenderer.positionCount = 2;
         lineRenderer.enabled = false;
 
-        playerContainer = rl.gameObject;
+        playerContainer = rigidLook.gameObject;
         grappleCrosshair.SetActive(false);
         baseCrosshairScale = grappleCrosshair.transform.localScale;
+        baseHudCrosshairScale = hudCrosshair.localScale;
     }
 
     // Update is called once per frame
     void Update()
     {
-        Transform orientation = rl.getCameraHolder();
+        Transform orientation = rigidLook.getCameraHolder();
         Debug.DrawRay(cam.position, orientation.forward, Color.red);
 
         RaycastHit grappleHit;
         bool rayIsHitting = Physics.Raycast(cam.position, orientation.forward, out grappleHit, grappleLength, ~playerLayer);
 
         // Crosshair.
-        if(rayIsHitting && !connected)
+        if(showSurfaceCrosshair)
         {
-            grappleCrosshair.transform.position = grappleHit.point;
-            float grappleDistance = Vector3.Magnitude(playerContainer.transform.position - grappleHit.point);
-            grappleCrosshair.transform.localScale = crosshairScaleFactor * grappleDistance * baseCrosshairScale;
-            grappleCrosshair.transform.position += grappleHit.normal * 0.1f;
-            grappleCrosshair.transform.rotation = Quaternion.FromToRotation(Vector3.forward, grappleHit.normal);
-            grappleCrosshair.SetActive(true);
-        }
-        else
+            if(rayIsHitting && !connected)
+            {
+                grappleCrosshair.transform.position = grappleHit.point;
+                float grappleDistance = Vector3.Magnitude(playerContainer.transform.position - grappleHit.point);
+                grappleCrosshair.transform.localScale = crosshairScaleFactor * grappleDistance * baseCrosshairScale;
+                grappleCrosshair.transform.position += grappleHit.normal * 0.001f;
+                grappleCrosshair.transform.rotation = Quaternion.FromToRotation(Vector3.forward, grappleHit.normal);
+                grappleCrosshair.SetActive(true);
+            }
+            else
+            {
+                grappleCrosshair.SetActive(false);
+            }
+        } else
         {
-            grappleCrosshair.SetActive(false);
+            if(rayIsHitting && !connected && !hudCrosshairIsMax)
+            {
+                hudCrosshair.localScale *= hudCrosshairMaxScale;
+                hudCrosshairIsMax = true;
+            }
+            else if(!rayIsHitting || connected)
+            {
+                hudCrosshair.localScale = baseHudCrosshairScale;
+                hudCrosshairIsMax = false;
+            }
         }
         
         // Pressed.
@@ -73,7 +99,7 @@ public class Grapple : MonoBehaviour
                 springJoint = playerContainer.AddComponent<SpringJoint>();
                 springJoint.autoConfigureConnectedAnchor = false;
                 springJoint.connectedAnchor = connectionPoint;
-                springJoint.spring = 4f;
+                springJoint.spring = springForce;
                 springJoint.minDistance = Vector3.Magnitude(playerContainer.transform.position - connectionPoint);
             }
 
