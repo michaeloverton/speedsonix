@@ -21,7 +21,7 @@ public class SkyboxModifier : MonoBehaviour
     {
         float currentExposure = Utility.Remap(player.position.y, 0, maxHeight, baseExposure, maxExposure);
         RenderSettings.skybox.SetFloat("_Exposure", currentExposure);
-        DynamicGI.UpdateEnvironment();
+        // DynamicGI.UpdateEnvironment();
     }
 
     void OnDestroy()

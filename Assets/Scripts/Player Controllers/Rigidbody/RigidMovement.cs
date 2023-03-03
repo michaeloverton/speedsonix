@@ -56,6 +56,7 @@ public class RigidMovement : MonoBehaviour
 
     [Header("Dash")]
     public float dashForce = 100f;
+    [SerializeField] float airDashMultiplier = 3f;
 
     [Header("Blast")]
     public float blastForce = 75f;
@@ -195,11 +196,9 @@ public class RigidMovement : MonoBehaviour
 
     void Pound() {
         // Prob do a raycast check and make sure we're a certain distance above the ground before enabling pound.
-        if(!isGrounded && currentPoundCount==0) {
-            rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
-            rb.AddForce(Vector3.down * poundForce, ForceMode.Impulse);
-            currentPoundCount++;
-        } else if(!isGrounded && currentPoundCount < maxPoundCount) {
+        if(!isGrounded) {
+            // rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+            rb.velocity = Vector3.zero;
             rb.AddForce(Vector3.down * poundForce, ForceMode.Impulse);
             currentPoundCount++;
         }
@@ -253,7 +252,11 @@ public class RigidMovement : MonoBehaviour
     }
 
     void Dash() {
-        rb.AddForce(orientation.forward * dashForce, ForceMode.Impulse);
+        // rb.velocity = new Vector3(rb.velocity.x, 0, rb.velocity.z);
+        rb.velocity = new Vector3(rb.velocity.x/2, 0, rb.velocity.z/2);
+        Vector3 dashVector = orientation.forward * dashForce;
+        if(!isGrounded) dashVector = orientation.forward * dashForce * airDashMultiplier;
+        rb.AddForce(dashVector, ForceMode.Impulse);
     }
 
     void Shoot() {
