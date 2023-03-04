@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{2e0bc797-e960-47d0-b761-0113f45adaec}">
+		<property name="assetPath">
+			<value>test music/arp-interlude-loop.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>54.857142857142854</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{630ffc18-945c-47f5-9fbc-c30d27b77fa3}</destination>
+		</relationship>
+	</object>
+</objects>

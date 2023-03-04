@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{8cd2df5d-8e46-4c66-9362-c89100db4055}">
+		<property name="name">
+			<value>SegTrigger</value>
+		</property>
+		<relationship name="folder">
+			<destination>{a7c88331-3bf9-4576-ac87-3f25e2a3dc16}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{1077ce2c-5f22-4bf1-bfbb-7689fc89838d}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{1077ce2c-5f22-4bf1-bfbb-7689fc89838d}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

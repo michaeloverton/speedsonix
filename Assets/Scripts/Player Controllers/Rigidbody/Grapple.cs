@@ -21,10 +21,7 @@ public class Grapple : MonoBehaviour
     [SerializeField] float crosshairScaleFactor;
     [SerializeField] bool showSurfaceCrosshair;
     Vector3 baseCrosshairScale;
-    [SerializeField] RectTransform hudCrosshair;
-    [SerializeField] float hudCrosshairMaxScale = 1.25f;
-    bool hudCrosshairIsMax = false;
-    Vector3 baseHudCrosshairScale;
+    [SerializeField] GrappleCrosshair hudCrosshair;
     
     bool cooldown;
     LineRenderer lineRenderer;
@@ -42,7 +39,6 @@ public class Grapple : MonoBehaviour
         playerContainer = rigidLook.gameObject;
         grappleCrosshair.SetActive(false);
         baseCrosshairScale = grappleCrosshair.transform.localScale;
-        baseHudCrosshairScale = hudCrosshair.localScale;
     }
 
     // Update is called once per frame
@@ -72,15 +68,13 @@ public class Grapple : MonoBehaviour
             }
         } else
         {
-            if(rayIsHitting && !connected && !hudCrosshairIsMax)
+            if(rayIsHitting && !connected)
             {
-                hudCrosshair.localScale *= hudCrosshairMaxScale;
-                hudCrosshairIsMax = true;
+                hudCrosshair.CrosshairHit();
             }
             else if(!rayIsHitting || connected)
             {
-                hudCrosshair.localScale = baseHudCrosshairScale;
-                hudCrosshairIsMax = false;
+                hudCrosshair.CrosshairUnhit();
             }
         }
         
