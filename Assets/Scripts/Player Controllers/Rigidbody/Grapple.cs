@@ -24,7 +24,7 @@ public class Grapple : MonoBehaviour
     Vector3 baseCrosshairScale;
     [SerializeField] GrappleCrosshair hudCrosshair;
 
-    [Header("Temporary Arm Ref")]
+    [Header("Arm Reference")]
     [SerializeField] ArmAnimator armAnim;
     
     bool cooldown;
@@ -101,7 +101,6 @@ public class Grapple : MonoBehaviour
                 springJoint.minDistance = Vector3.Magnitude(playerContainer.transform.position - connectionPoint);
 
                 armAnim.PullBack();
-                Debug.Log("PULLING BACK ANIMATION");
             }
 
             cooldown = true;
@@ -131,7 +130,6 @@ public class Grapple : MonoBehaviour
             Destroy(springJoint);
 
             armAnim.Return();
-            Debug.Log("RETURING TO NORMAL");
         }
         
     }
