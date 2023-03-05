@@ -8,7 +8,7 @@ public class AudioManager : MonoBehaviour
 
     public delegate void MoodChangeEvent(int mood);
     public event MoodChangeEvent OnMoodChange;
-    public delegate void SegmentChangeEvent(int segment);
+    public delegate void SegmentChangeEvent(int currentSegment);
     public event SegmentChangeEvent OnSegmentChange;
 
     void Awake()
@@ -21,8 +21,8 @@ public class AudioManager : MonoBehaviour
         if (OnMoodChange != null) OnMoodChange(mood);
     }
 
-    public void SegmentChange(int segment)
+    public void SegmentChange(int currentSegment)
     {
-        if (OnSegmentChange != null) OnSegmentChange(segment);
+        if (OnSegmentChange != null) OnSegmentChange(currentSegment);
     }
 }

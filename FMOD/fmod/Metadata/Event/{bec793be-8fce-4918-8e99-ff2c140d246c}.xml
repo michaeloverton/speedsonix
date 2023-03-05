@@ -696,7 +696,7 @@
 			<value>54.857142857142854</value>
 		</property>
 		<property name="quantizationInterval">
-			<value>1</value>
+			<value>8</value>
 		</property>
 		<property name="looping">
 			<value>2</value>

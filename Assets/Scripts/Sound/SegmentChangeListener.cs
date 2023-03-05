@@ -23,10 +23,13 @@ public class SegmentChangeListener : MonoBehaviour
         float initialValue;
         float segmentChangeValue;
         instance.getParameterByName("SegTrigger", out initialValue, out segmentChangeValue);
+        
 
         if(segmentChangeValue == 1 && previousValue == 0)
         {
-            AudioManager.Instance.SegmentChange(1);
+            float currentMood;
+            instance.getParameterByName("MusicMood", out initialValue, out currentMood);
+            AudioManager.Instance.SegmentChange((int)currentMood);
         }
 
         previousValue = segmentChangeValue;
