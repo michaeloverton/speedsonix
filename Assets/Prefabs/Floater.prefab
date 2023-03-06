@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 726121449810101852}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -200, y: 750, z: -657}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalScale: {x: 0.49999997, y: 0.49999997, z: 0.49999997}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5601561884828709062}
@@ -49,8 +49,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d13bc02462df0034ea40aa93409aea56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxExtent: 50
-  timeScaleFactor: 0.25
+  maxExtent: 83.7
+  timeScaleFactor: 1
 --- !u!1 &726121449852083428
 GameObject:
   m_ObjectHideFlags: 0
@@ -69,7 +69,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &726121449852083427
 Transform:
   m_ObjectHideFlags: 0
@@ -264,7 +264,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &726121450934030308
 Transform:
   m_ObjectHideFlags: 0
