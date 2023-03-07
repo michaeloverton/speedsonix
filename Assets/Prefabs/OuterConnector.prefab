@@ -11,7 +11,8 @@ GameObject:
   - component: {fileID: 2910014721436360106}
   - component: {fileID: 2015544455467501416}
   - component: {fileID: 7597967191262580605}
-  m_Layer: 0
+  - component: {fileID: 3920506031908405569}
+  m_Layer: 19
   m_Name: OuterConnectorSocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -83,6 +84,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &3920506031908405569
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743767317640071023}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3517182131165683545, guid: bd828ac40ee13c74880d8ba410258ed2, type: 3}
 --- !u!1 &995139346162895682
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,7 +109,8 @@ GameObject:
   - component: {fileID: 5287927171695104579}
   - component: {fileID: 951187597730042155}
   - component: {fileID: 5125589741296915931}
-  m_Layer: 0
+  - component: {fileID: 6293406576750223073}
+  m_Layer: 19
   m_Name: OuterConnectorSocket (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,6 +182,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6293406576750223073
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995139346162895682}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 3517182131165683545, guid: bd828ac40ee13c74880d8ba410258ed2, type: 3}
 --- !u!1 &5503970123374998023
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,7 +205,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2581267769946043186}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: OuterConnector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,7 +241,8 @@ GameObject:
   - component: {fileID: 3272262109112512077}
   - component: {fileID: 5990367987860399934}
   - component: {fileID: 6719591948910305239}
-  m_Layer: 0
+  - component: {fileID: 8475395904868528480}
+  m_Layer: 19
   m_Name: OuterConnectorCore
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,3 +314,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &8475395904868528480
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9184639446738743881}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -8742367022802135310, guid: bd828ac40ee13c74880d8ba410258ed2, type: 3}
