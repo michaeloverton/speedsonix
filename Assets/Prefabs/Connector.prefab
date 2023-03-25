@@ -940,6 +940,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Angel Group (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 558818049238686665, guid: 34370515012dd9b4195759201057779a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 558818049238686666, guid: 34370515012dd9b4195759201057779a, type: 3}
       propertyPath: m_RootOrder
       value: 4
