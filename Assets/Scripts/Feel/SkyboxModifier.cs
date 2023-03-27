@@ -15,8 +15,8 @@ public class SkyboxModifier : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        RenderSettings.skybox.SetFloat("_Exposure", baseExposure);
-        DynamicGI.UpdateEnvironment();
+        // RenderSettings.skybox.SetFloat("_Exposure", baseExposure);
+        // DynamicGI.UpdateEnvironment();
         baseSkyboxColor = RenderSettings.skybox.GetColor("_Tint");
         baseFogColor = RenderSettings.fogColor;
 
@@ -26,8 +26,8 @@ public class SkyboxModifier : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float currentExposure = Utility.Remap(player.position.y, 0, maxHeight, baseExposure, maxExposure);
-        RenderSettings.skybox.SetFloat("_Exposure", currentExposure);
+        // float currentExposure = Utility.Remap(player.position.y, 0, maxHeight, baseExposure, maxExposure);
+        // RenderSettings.skybox.SetFloat("_Exposure", currentExposure);
         // DynamicGI.UpdateEnvironment();
     }
 

@@ -300,10 +300,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall Angel
       objectReference: {fileID: 0}
-    - target: {fileID: 7220194400799124683, guid: 00f7e098a73cac547b362ca1fcf46c4c, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
     - target: {fileID: 8032337203962394225, guid: 00f7e098a73cac547b362ca1fcf46c4c, type: 3}
       propertyPath: m_RootOrder
       value: 0

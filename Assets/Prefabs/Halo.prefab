@@ -17,7 +17,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5422699654989022137
 Transform:
@@ -112,7 +112,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5533786935711364927
 Transform:
@@ -147,7 +147,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5533786935974254777
 Transform:
@@ -182,7 +182,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &5533786937437139797
 Transform:
@@ -213,6 +213,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossbeam Connector (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 2792185487317914802, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4995037882287931883, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -272,6 +276,14 @@ PrefabInstance:
     - target: {fileID: 4995037882287931883, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8591859791849884446, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 9167032521878485246, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
@@ -291,6 +303,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Crossbeam Connector
       objectReference: {fileID: 0}
+    - target: {fileID: 2792185487317914802, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     - target: {fileID: 4995037882287931883, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -351,6 +367,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8591859791849884446, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 9167032521878485246, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
 --- !u!4 &691871656394706449 stripped
@@ -368,6 +392,10 @@ PrefabInstance:
     - target: {fileID: 2792185487317914802, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
       propertyPath: m_Name
       value: Crossbeam Connector (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792185487317914802, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4995037882287931883, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
       propertyPath: m_RootOrder
@@ -429,6 +457,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8591859791849884446, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 9167032521878485246, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
 --- !u!4 &691871656334065099 stripped
@@ -446,6 +482,10 @@ PrefabInstance:
     - target: {fileID: 2792185487317914802, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
       propertyPath: m_Name
       value: Crossbeam Connector (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792185487317914802, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4995037882287931883, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
       propertyPath: m_RootOrder
@@ -507,6 +547,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8591859791849884446, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 9167032521878485246, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
 --- !u!4 &691871656358555324 stripped
@@ -524,6 +572,10 @@ PrefabInstance:
     - target: {fileID: 2792185487317914802, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
       propertyPath: m_Name
       value: Crossbeam Connector (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792185487317914802, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4995037882287931883, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
       propertyPath: m_RootOrder
@@ -585,6 +637,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8591859791849884446, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 9167032521878485246, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
 --- !u!4 &691871658115808503 stripped
@@ -602,6 +662,10 @@ PrefabInstance:
     - target: {fileID: 2792185487317914802, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
       propertyPath: m_Name
       value: Crossbeam Connector (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792185487317914802, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4995037882287931883, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
       propertyPath: m_RootOrder
@@ -663,6 +727,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8591859791849884446, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 9167032521878485246, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
 --- !u!4 &691871658051112680 stripped
@@ -680,6 +752,10 @@ PrefabInstance:
     - target: {fileID: 2792185487317914802, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
       propertyPath: m_Name
       value: Crossbeam Connector (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792185487317914802, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4995037882287931883, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
       propertyPath: m_RootOrder
@@ -741,6 +817,14 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8591859791849884446, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 9167032521878485246, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
 --- !u!4 &691871657824991354 stripped
@@ -758,6 +842,10 @@ PrefabInstance:
     - target: {fileID: 2792185487317914802, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
       propertyPath: m_Name
       value: Crossbeam Connector
+      objectReference: {fileID: 0}
+    - target: {fileID: 2792185487317914802, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 4995037882287931883, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
       propertyPath: m_RootOrder
@@ -818,6 +906,14 @@ PrefabInstance:
     - target: {fileID: 4995037882287931883, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
       propertyPath: m_ConstrainProportionsScale
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8591859791849884446, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
+    - target: {fileID: 9167032521878485246, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2fa6a27a6516b2945b6baaa44c8916fb, type: 3}
