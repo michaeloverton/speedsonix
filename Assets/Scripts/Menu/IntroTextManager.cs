@@ -8,6 +8,11 @@ public class IntroTextManager : MonoBehaviour
     [SerializeField] float sceneTime = 3f;
     float elapsedTime = 0f;
 
+    void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -15,7 +20,7 @@ public class IntroTextManager : MonoBehaviour
         {
             SceneManager.LoadScene("Final");
         }
-        
+
         elapsedTime += Time.deltaTime;
     }
 }
