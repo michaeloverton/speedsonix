@@ -6,4 +6,5 @@ public static class SceneVariables
 {
     // Fly mode defaults to false. Only true unless set in MainMenu class.
     public static bool flyMode = false;
+    public static bool paused = false;
 }

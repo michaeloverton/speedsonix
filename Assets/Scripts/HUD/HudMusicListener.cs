@@ -20,6 +20,8 @@ public class HudMusicListener : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(SceneVariables.paused) return;
+
         if(panelIsOn)
         {
             float panelAlpha = Mathf.Lerp(maxPanelAlpha, 0, elapsedTime/panelFadeTime);
@@ -37,6 +39,8 @@ public class HudMusicListener : MonoBehaviour
 
     void FlashPanel(int segment)
     {
+        if(SceneVariables.paused) return;
+        
         panel.color = new Color(panel.color.r, panel.color.g, panel.color.b, maxPanelAlpha);
         panelIsOn = true;
     }

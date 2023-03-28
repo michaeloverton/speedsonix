@@ -41,6 +41,8 @@ public class SkyboxModifier : MonoBehaviour
 
     void ChangeSkyboxColor(int currentSegment)
     {
+        if(SceneVariables.paused) return;
+        
         if(currentSegment == 3)
         {
             RenderSettings.skybox.SetColor("_Tint", interludeSkyboxColor);

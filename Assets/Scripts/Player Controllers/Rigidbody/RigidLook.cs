@@ -26,6 +26,8 @@ public class RigidLook : MonoBehaviour
     }
 
     void Update() {
+        if(SceneVariables.paused) return;
+        
         GetInput();
 
         cam.transform.localRotation = Quaternion.Euler(xRotation, yRotation, wallRun.currentTilt + cameraMoveTilt.currentMoveTilt); // Takes into account the possible tilting of camera.
