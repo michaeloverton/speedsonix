@@ -34,7 +34,7 @@ public class MainMenu : MonoBehaviour
         // fire.Stop();
 
         yield return new WaitForSeconds(blackTime);
-        SceneManager.LoadScene("Final");
+        SceneManager.LoadScene("IntroText");
     }
 
     public void Quit()

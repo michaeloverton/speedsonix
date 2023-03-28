@@ -557,9 +557,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blackPanel: {fileID: 0}
-  blackTime: 1.5
+  blackTime: 0
   music: {fileID: 0}
-  fire: {fileID: 0}
 --- !u!4 &1435654981
 Transform:
   m_ObjectHideFlags: 0
