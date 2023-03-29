@@ -10,8 +10,9 @@ public class SceneChanger : MonoBehaviour
         // SceneManager.LoadScene(0);
         Time.timeScale = 1;
         // SceneVariables.paused = false;
+        SceneManager.LoadScene(0);
 
-        StartCoroutine(LoadMainMenu());
+        // StartCoroutine(LoadMainMenu());
     }
 
     IEnumerator LoadMainMenu()
