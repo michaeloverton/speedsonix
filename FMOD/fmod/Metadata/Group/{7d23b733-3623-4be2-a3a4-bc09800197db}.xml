@@ -22,8 +22,11 @@
 	</object>
 	<object class="MixerBusPanner" id="{6f2c754c-c386-431b-aafe-390819548348}" />
 	<object class="SFXReverbEffect" id="{99586855-0d73-4e4a-a011-a3ac092f0c49}">
+		<property name="lowShelfGain">
+			<value>-12</value>
+		</property>
 		<property name="wetLevel">
-			<value>-11.5</value>
+			<value>-2</value>
 		</property>
 	</object>
 	<object class="MixerBusFader" id="{4bc8faad-f345-410b-bc21-10e6f927617d}" />
