@@ -8376,7 +8376,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 2
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -22686,6 +22686,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 993394591575159678, guid: 64f7a8fe10335604f9ed05c67436e692, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1882332356023258468, guid: 64f7a8fe10335604f9ed05c67436e692, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -22900,6 +22904,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7894297511375115715, guid: 64f7a8fe10335604f9ed05c67436e692, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317103896584401418, guid: 64f7a8fe10335604f9ed05c67436e692, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317103897587207573, guid: 64f7a8fe10335604f9ed05c67436e692, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8317103898107985634, guid: 64f7a8fe10335604f9ed05c67436e692, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8870165420796047728, guid: 64f7a8fe10335604f9ed05c67436e692, type: 3}
