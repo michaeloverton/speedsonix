@@ -10,7 +10,7 @@ public class SceneChanger : MonoBehaviour
         // SceneManager.LoadScene(0);
         Time.timeScale = 1;
         // SceneVariables.paused = false;
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
 
         // StartCoroutine(LoadMainMenu());
     }
@@ -23,6 +23,6 @@ public class SceneChanger : MonoBehaviour
 
         yield return new WaitForSeconds(1);
 
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
 }
