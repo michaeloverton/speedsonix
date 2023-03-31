@@ -52,4 +52,9 @@ public class MainMenu : MonoBehaviour
     {
         grappleControls.SetActive(show);
     }
+
+    public void ShowFlyControls(bool show)
+    {
+        flyModeControls.SetActive(show);
+    }
 }
