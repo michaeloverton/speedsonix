@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3870920734364958408}
-  m_Layer: 0
+  m_Layer: 19
   m_Name: Triple Halo
   m_TagString: Untagged
   m_Icon: {fileID: 0}

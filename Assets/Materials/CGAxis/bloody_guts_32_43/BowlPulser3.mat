@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GutsLinearPulsating
+  m_Name: BowlPulser3
   m_Shader: {fileID: -6465566751694194690, guid: 6c148d0b9639da14a822858ce89c57b2, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
@@ -55,14 +55,14 @@ Material:
     m_Ints: []
     m_Floats:
     - _Normal_Amount: 1
-    - _Pulse_Count: 40
-    - _Pulse_Max: 2
-    - _Pulse_Min: 0
-    - _Pulse_Speed: 0.37
+    - _Pulse_Count: 60
+    - _Pulse_Max: 5
+    - _Pulse_Min: 1
+    - _Pulse_Speed: 0.4
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - _Tiling: {r: 60, g: 40, b: 0, a: 0}
+    - _Tiling: {r: 15, g: 15, b: 0, a: 0}
   m_BuildTextureStacks: []
 --- !u!114 &7898122774047630856
 MonoBehaviour:
