@@ -42,6 +42,7 @@ public class PauseManager : MonoBehaviour
         Time.timeScale = 0;
         SceneVariables.paused = true;
         Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
     }
 
     void Unpause()
@@ -49,6 +50,7 @@ public class PauseManager : MonoBehaviour
         Time.timeScale = 1;
         SceneVariables.paused = false;
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     public void PauseChange()

@@ -19,17 +19,9 @@ public class SkyboxModifier : MonoBehaviour
         // DynamicGI.UpdateEnvironment();
         baseSkyboxColor = RenderSettings.skybox.GetColor("_Tint");
         baseFogColor = RenderSettings.fogColor;
-        DynamicGI.UpdateEnvironment();
+        // DynamicGI.UpdateEnvironment();
 
         AudioManager.Instance.OnSegmentChange += ChangeSkyboxColor;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        // float currentExposure = Utility.Remap(player.position.y, 0, maxHeight, baseExposure, maxExposure);
-        // RenderSettings.skybox.SetFloat("_Exposure", currentExposure);
-        // DynamicGI.UpdateEnvironment();
     }
 
     void OnDestroy()
