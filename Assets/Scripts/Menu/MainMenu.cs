@@ -10,6 +10,8 @@ public class MainMenu : MonoBehaviour
     [SerializeField] GameObject blackPanel; // This is an animation that will fade to black.
     [SerializeField] float blackTime = 1.5f;
     [SerializeField] FMODUnity.StudioEventEmitter music;
+    [SerializeField] GameObject grappleControls;
+    [SerializeField] GameObject flyModeControls;
 
     void Start()
     {
@@ -44,5 +46,10 @@ public class MainMenu : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
         #endif
         Application.Quit();
+    }
+
+    public void ShowGrappleControls(bool show)
+    {
+        grappleControls.SetActive(show);
     }
 }

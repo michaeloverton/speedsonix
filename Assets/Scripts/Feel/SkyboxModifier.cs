@@ -19,6 +19,7 @@ public class SkyboxModifier : MonoBehaviour
         // DynamicGI.UpdateEnvironment();
         baseSkyboxColor = RenderSettings.skybox.GetColor("_Tint");
         baseFogColor = RenderSettings.fogColor;
+        DynamicGI.UpdateEnvironment();
 
         AudioManager.Instance.OnSegmentChange += ChangeSkyboxColor;
     }
