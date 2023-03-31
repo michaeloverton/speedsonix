@@ -55,10 +55,10 @@ Material:
     m_Ints: []
     m_Floats:
     - _Normal_Amount: 1
-    - _Pulse_Count: 40
+    - _Pulse_Count: 80
     - _Pulse_Max: 2
     - _Pulse_Min: 0
-    - _Pulse_Speed: 0.37
+    - _Pulse_Speed: 0.3
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
