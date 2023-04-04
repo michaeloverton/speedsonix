@@ -10,26 +10,35 @@ public class FlyCamera : MonoBehaviour {
 
 	Vector3 velocity; // current velocity
 
-	static bool Focused {
-		get => Cursor.lockState == CursorLockMode.Locked;
-		set {
-			Cursor.lockState = value ? CursorLockMode.Locked : CursorLockMode.None;
-			Cursor.visible = value == false;
-		}
+	void Start()
+	{
+		Cursor.lockState = CursorLockMode.Locked;
 	}
 
-	void OnEnable() {
-		if( focusOnEnable ) Focused = true;
-	}
+	// static bool Focused {
+	// 	get => Cursor.lockState == CursorLockMode.Locked;
+	// 	set {
+	// 		Cursor.lockState = value ? CursorLockMode.Locked : CursorLockMode.None;
+	// 		Cursor.visible = value == false;
+	// 	}
+	// }
 
-	void OnDisable() => Focused = false;
+	// void OnEnable() {
+	// 	if( focusOnEnable ) Focused = true;
+	// }
+
+	// void OnDisable() => Focused = false;
 
 	void Update() {
+		if(SceneVariables.paused) return;
+		
 		// Input
-		if( Focused )
-			UpdateInput();
-		else if( Input.GetMouseButtonDown( 0 ) )
-			Focused = true;
+		// if( Focused )
+		// 	UpdateInput();
+		// else if( Input.GetMouseButtonDown( 0 ) )
+		// 	Focused = true;
+
+		UpdateInput();
 
 		// Physics
 		velocity = Vector3.Lerp( velocity, Vector3.zero, dampingCoefficient * Time.deltaTime );
@@ -48,8 +57,8 @@ public class FlyCamera : MonoBehaviour {
 		transform.rotation = horiz * rotation * vert;
 
 		// Leave cursor lock
-		if( Input.GetKeyDown( KeyCode.Escape ) )
-			Focused = false;
+		// if( Input.GetKeyDown( KeyCode.Escape ) )
+		// 	Focused = false;
 	}
 
 	Vector3 GetAccelerationVector() {

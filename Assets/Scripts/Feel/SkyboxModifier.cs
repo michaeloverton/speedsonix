@@ -15,20 +15,13 @@ public class SkyboxModifier : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        RenderSettings.skybox.SetFloat("_Exposure", baseExposure);
-        DynamicGI.UpdateEnvironment();
+        // RenderSettings.skybox.SetFloat("_Exposure", baseExposure);
+        // DynamicGI.UpdateEnvironment();
         baseSkyboxColor = RenderSettings.skybox.GetColor("_Tint");
         baseFogColor = RenderSettings.fogColor;
+        // DynamicGI.UpdateEnvironment();
 
         AudioManager.Instance.OnSegmentChange += ChangeSkyboxColor;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        float currentExposure = Utility.Remap(player.position.y, 0, maxHeight, baseExposure, maxExposure);
-        RenderSettings.skybox.SetFloat("_Exposure", currentExposure);
-        // DynamicGI.UpdateEnvironment();
     }
 
     void OnDestroy()
@@ -41,6 +34,8 @@ public class SkyboxModifier : MonoBehaviour
 
     void ChangeSkyboxColor(int currentSegment)
     {
+        if(SceneVariables.paused) return;
+        
         if(currentSegment == 3)
         {
             RenderSettings.skybox.SetColor("_Tint", interludeSkyboxColor);

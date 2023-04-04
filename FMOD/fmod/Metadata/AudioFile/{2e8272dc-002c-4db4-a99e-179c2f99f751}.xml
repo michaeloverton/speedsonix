@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{2e8272dc-002c-4db4-a99e-179c2f99f751}">
+		<property name="assetPath">
+			<value>button-ping.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>0.047375</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{630ffc18-945c-47f5-9fbc-c30d27b77fa3}</destination>
+		</relationship>
+	</object>
+</objects>

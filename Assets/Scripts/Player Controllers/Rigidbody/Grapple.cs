@@ -48,6 +48,8 @@ public class Grapple : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(SceneVariables.paused) return;
+        
         Transform orientation = rigidLook.getCameraHolder();
         Debug.DrawRay(cam.position, orientation.forward, Color.red);
 
